@@ -72,7 +72,12 @@ public class find {
 // System.out.println(" "+i);
 // System.out.println(i);
 //   System.out.println(str.replace('2', 'n'));
-//  
+
+
+
+
+        
+//--------SORTING ARRAY----------
 int[] a={12,33,44,28,94,73,56};
 int n=a.length;
 for (int i = 0; i <= n-1; i++) {
