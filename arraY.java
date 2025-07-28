@@ -54,3 +54,79 @@ System.out.print(" "+arr[i]);
         System.out.println();
     }
 }
+ //
+// 
+import java.util.*;
+import  java.util.ArrayList;
+class d{
+    public static void main(String[] args) {
+        //itrative approach of hte array
+
+// int[] arr= {10,20,30,40,70,60,90};
+// ArrayList<Integer> res= getAlternates(arr);
+// for(int i:res){
+//     System.out.println(i+" ");
+// }
+//-----------------leaders in an array
+
+int[] arr={10,33,42,2,53,7,1};
+ArrayList<Integer>result= leaders(arr);
+for(int res:result){
+    System.out.println(res+" ");
+}System.out.println();
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+    
+static ArrayList<Integer> leaders(int[] arr)
+{
+    ArrayList<Integer> result = new ArrayList<>();
+    int n= arr.length;
+    for(int i =0;i<n;i++)
+    {
+        int j;
+        for(j=i+1;j<n;j++)
+        {
+            if(arr[i]<arr[j])
+            {
+                break;
+            }
+
+        }
+        if(j==n)
+        {
+            result.add(arr[i]);
+        }return result;
+
+    }
+}
+
+
+
+
+
+
+
+    static ArrayList<Integer> getAlternates(int[] arr)
+    {
+        ArrayList<Integer> res = new ArrayList<>();
+        for (int i = 0; i < arr.length; i+=2) 
+        {
+            res.add(arr[i]);
+
+        }
+        return res;
+
+    }
+}
